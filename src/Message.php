@@ -1,6 +1,6 @@
 <?php
 
-namespace Stoneworld\Wechat;
+namespace Pegziq\WorkWeChat;
 
 use InvalidArgumentException;
 
@@ -37,7 +37,7 @@ class Message
             throw new InvalidArgumentException("Error Message Type '{$type}'");
         }
 
-        $message = "Stoneworld\\Wechat\\Messages\\"
+        $message = "Pegziq\\WorkWeChat\\Messages\\"
                     .str_replace(' ', '', ucwords(str_replace(array('-', '_'), ' ', $type)));
 
         return new $message();

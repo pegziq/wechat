@@ -1,31 +1,27 @@
 {
-    "name": "stoneworld/wechat",
+    "name": "pegziq/work_wechat",
     "description": "微信企业号",
     "keywords": ["wechat"],
-    "homepage": "https://github.com/stoneworld",
+    "homepage": "https://github.com/pegziq",
     "license": "MIT",
     "authors": [
         {
             "name": "stoneworld",
-            "homepage": "https://github.com/stoneworld",
+            "homepage": "https://github.com/pegziq",
             "role": "Developer"
         }
     ],
     "minimum-stability" : "dev",
-    "support": {
-        "email": "stoneworld1991@gmail.com"
-    },
+    "support": {},
     "require": {
         "php":">=5.3",
-        "ext-mcrypt": "*",
-        "monolog/monolog": "^1.17"
+        "ext-mcrypt": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.0"
     },
     "autoload": {
         "psr-4": {
-            "Stoneworld\\Wechat\\": "src/Wechat/"
         }
     }
 }

@@ -10,7 +10,7 @@
  */
 
 spl_autoload_register(function ($class) {
-    if (false !== stripos($class, 'Stoneworld\Wechat')) {
+    if (false !== stripos($class, 'Pegziq\WorkWeChat')) {
         require_once __DIR__.'/src/'.str_replace('\\', DIRECTORY_SEPARATOR, substr($class, 10)).'.php';
     }
 });
